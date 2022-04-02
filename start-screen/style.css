@@ -1,0 +1,29 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.btnBlock{
+    display: flex;
+    flex-direction: column
+}
+
+.mainBtn{
+    border: 1px solid aqua;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 8px;
+    color: aqua;
+    cursor: pointer;
+}
+
+.mainBtn:first-child{
+    margin-bottom: 15px;
+}
+
+.mainBtn:hover{
+    background-color: aqua;
+    color: white; 
+}
