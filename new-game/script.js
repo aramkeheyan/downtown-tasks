@@ -47,9 +47,7 @@ gameBlock.addEventListener("click", function(e){
     if(openedCards.length === 2 && openedCards[0] === openedCards[1]){
         for(let card of gameBlock.children){
             if(card.firstChild.dataset.index === index){
-                setTimeout(()=>(card.firstChild.remove(),  card.classList.add("removed")), 500)
-               
-                checkGameOver()
+                setTimeout(()=>(card.firstChild.remove(),  card.classList.add("removed"), checkGameOver()), 500)
             }
         }
         openedCards = []
